@@ -7,7 +7,6 @@ import {connect} from 'react-redux';
 
 class App extends Component {
   render() {
-      console.log("APPPPPPPPPPPPP");
       const PublicRoute=({component:Component,...rest})=>(
           <Route {...rest} render={(routeProps)=>(!this.props.auth.user ?
               <div>public link<Component {...routeProps} /></div>: <Redirect to={'/'} />)} />
