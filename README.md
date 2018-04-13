@@ -1,2 +1,1 @@
-# redux-demo-login
-login manament 
+# reactr-redux-practise
